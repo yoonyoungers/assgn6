@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     
+    <head>
+    
         <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
     
@@ -9,9 +11,12 @@
      <!-- styles -->
       <link rel="stylesheet" type="text/css" href="style.css">
     
+        <script src="script.js"></script>
     <title>Bun Bun Bake Shop</title>
     <meta charset="UTF-8">
+    </head>
     
+    <body onload="getCart();">
 
 <header>
     
@@ -34,73 +39,34 @@
         
     </nav>
 </header>
+
+    
     
     <h2><u>Currently in cart</u></h2>
     
 <div class="cart-stuff">
     
     <!-- shopping cart more nicely organized into a table/grid format-->
-        <div id = "cart-sect-a">
 
-          </div>
-                  <div id = "cart-sect-b">
+                  <div id = "cart-sect-a">
             Type
           </div>
-                  <div id = "cart-sect-c">
-            Qty
-          </div>
-                  <div id = "cart-sect-d">
+                  <div id = "cart-sect-b">
             Filling
           </div>
-                  <div id = "cart-sect-e">
-            Price
+                  <div id = "cart-sect-c">
+            Qty/price
           </div>
-    
-                  <div id = "cart-sect-f">
-            
-          </div>    
-    
+                  <div id = "cart-sect-d">
+          </div>
 
-          <div id="input-1">
-          <img id= "input-aimg" src="http://thesweetandsimplekitchen.com/wp-content/uploads/2017/08/IMG_0046-e1504024737855.jpg" alt="blackberry pastry 1" height=180>
-              
-        </div>
-          
-        <div id="input-b">
-            Blackberry bun
-
-        </div>
-          
-        <div id="input-c">
-            3
-               
-    </div>
-
-
-        <div id="input-d">
-            None
-            
-    </div>
-
-        <div id="input-e">
-
-            $7
-            
-            
-    </div>    
-    
-        <div id="input-f">
-            <br>
-            <br>
-            <div class="addtocart">Remove from cart</div>
-            
-            
+        <div id="cartFull">
     </div>
     
     
     </div>
         
-
+</body>
     
     
     
