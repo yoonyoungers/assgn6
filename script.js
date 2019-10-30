@@ -52,7 +52,7 @@ function getCart(){
         var item = document.createElement("div");
         item.append(fillingHTML);
         
-        
+
         
         var quantityHTML = document.createElement("p");
             var quantityText= document.createTextNode = cart[i][1];
