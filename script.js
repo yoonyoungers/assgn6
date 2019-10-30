@@ -4,10 +4,7 @@ var additional;
 
 
 //submit to cart
-function incrementValue() {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    
+function incrementValue() {    
     if(typeof quantity !== null && typeof filling !== null){
 
         cartArray.push([bunItem.filling, bunItem.quantity]);
