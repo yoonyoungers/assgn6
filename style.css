@@ -317,7 +317,7 @@ form{
 
 /** editing the Cart Array **/
 
-#cartFull{
+.cartFull{
     color: black;
     padding-left: 50px;
     align-content: center;
