@@ -15,11 +15,8 @@ function bunItem(filling, quantity){
 //submit to cart
 function incrementValue() {
     
-    if(quantity !== null && filling !== null){
-        var value = /*parseInt(document.getElementById('cartqty').value, 10); 
-    value++; */
-            //adding for each click
-        
+    if(typeof quantity !== null && typeof filling !== null){
+
         cartArray.push([bunItem.filling, bunItem.quantity]);
     
         document.getElementById('cartqty').value = cartArray.length;
@@ -34,6 +31,7 @@ function incrementValue() {
 function getCart(){
     var cart = JSON.parse(localStorage.getItem("cartArray"));
    console.log(cart);
+    console.log(cart.length);
     
     document.getElementById("cartFull").innerHTML = "";
     for(var i = 0; i<cart.length; i++){
@@ -51,7 +49,7 @@ function getCart(){
          var fillingText = document.createTextNode=cart[i][0];
         
         fillingHTML.append(fillingText);
-        var item = document.getElementById("cartFull");
+        var item = document.createElement("div");
         item.append(fillingHTML);
         
         
@@ -61,6 +59,8 @@ function getCart(){
         quantityHTML.append(quantityText);
         item.append(quantityHTML);
         
+        item.setAttribute("class", "cartItem");
+        
         var button = document.createElement("input");
         button.setAttribute("type", "submit");
         button.setAttribute("onclick", "removeFromCart(this);");
@@ -68,8 +68,11 @@ function getCart(){
         button.setAttribute("value2", i);
         item.append(button);
         
+        var fillCart = document.getElementById("cartFull");
+        fillCart.append(item);
 
     }
+    document.getElementById('cartqty').value = cart.length;
 }
 
 function removeFromCart(itemToRemove){
