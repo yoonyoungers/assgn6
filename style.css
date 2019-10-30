@@ -191,20 +191,7 @@ header nav a {
     
 }
 
-.cart-stuff{
-    background: #eeeeee;
-    padding-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 195px);
-    grid-template-rows: repeat(2);
-    grid-gap: 20px;
-    margin-top: 0px;
-    justify-items: left;
-    justify-content: center;
-    align-items: stretch;
-    align-content: center;
-    grid-auto-flow: row;  
-}
+
 
 #cart-sect{
     font-weight: bold;
