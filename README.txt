@@ -1,5 +1,4 @@
-Added page change of details in both Original Bun and Blackberry bun pages
+6B assignment created
+When clicking through the products to the Blackberry bun, can add the black berry buns once filling out the details of filling and quantity
 
-new javascript file
-
-Lo-fidelity draft of shopping cart included in a separate html file that is not linked in other pages
+added the carousel extra credit at the bottom of the blackberry products details page 
