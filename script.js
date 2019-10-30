@@ -44,7 +44,6 @@ function getCart(){
         item.append("Blackberry");
         
         
-        
         var fillingHTML = document.createElement("p");
          var fillingText = document.createTextNode=cart[i][0];
         
