@@ -16,7 +16,7 @@ function bunItem(filling, quantity){
 
 function incrementValue() {
     
-    if(typeof quantity !== null && typeof filling !== null){
+    if(quantity !== null && filling !== null){
 
         cartArray.push([bunItem.filling, bunItem.quantity]);
     
