@@ -73,7 +73,6 @@ function getCart(){
 
     }
     document.getElementById('cartqty').value = cart.length;
-}
 
 function removeFromCart(itemToRemove){
 var cart = JSON.parse(localStorage.getItem("cartArray"));
