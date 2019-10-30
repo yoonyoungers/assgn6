@@ -12,8 +12,7 @@ function bunItem(filling, quantity){
     this.quantity = quantity;
 }
 
-//submit to cart
-
+//submit to cart - changing cart value
 function incrementValue() {
     
     if(quantity !== null && filling !== null){
@@ -29,6 +28,7 @@ function incrementValue() {
 
 }
 
+//Adding the different Bun detail elements when adding to cart
 function getCart(){
     var cart = JSON.parse(localStorage.getItem("cartArray"));
    console.log(cart);
@@ -73,6 +73,8 @@ function getCart(){
     document.getElementById('cartqty').value = cart.length;
 }
 
+
+//removing specific item when customer clicks remove button
 function removeFromCart(itemToRemove){
 var cart = JSON.parse(localStorage.getItem("cartArray"));
     var removeIndex = itemToRemove.getAttribute("value2");
@@ -81,6 +83,9 @@ var cart = JSON.parse(localStorage.getItem("cartArray"));
     getCart();
 }
 
+
+
+//All of the potential choices below
 function qty1(){
     bunItem.quantity = document.getElementById("opt1").value;
 
@@ -123,31 +128,22 @@ function fill5(){
 
 
 
+//6B extra credit stuff: carousel of other products
+var carouselIndex = 1;
+showCarousel(carouselIndex);
 
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function moveCarousel(n) {
+  showCarousel(carouselIndex += n);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
+function showCarousel(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+  var carousel = document.getElementsByClassName("carousel");
+  if (n > carousel.length) {carouselIndex = 1}    
+  if (n < 1) {carouselIndex = carousel.length}
+  for (i = 0; i < carousel.length; i++) {
+      carousel[i].style.display = "none";  
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+    
+  carousel[carouselIndex-1].style.display = "inline-block";  
 }

@@ -1,105 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
         <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
     
     <link href="https://fonts.googleapis.com/css?family=League+Script&display=swap" rel="stylesheet">
     
-     <!-- styles -->
-      <link rel="stylesheet" type="text/css" href="style.css">
+     <!-- CSS styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
     
     <title>Bun Bun Bake Shop</title>
     <meta charset="UTF-8">
     
-
-    <script src="script.js">
-    </script>
-    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </head>
 
 <body onload="getCart();">
-    <header>
-        <h1><a href="homepage.html">Bun Bun Bake Shop</a></h1>
-        <nav>
-            - 
-            <a href="products.html">Our products</a> 
-            -
-            <a> Locations</a>
-            -
-            <a>Catering</a>
-            -
-            <a href="aboutus.html">About us</a>
-            -
-            <a href=Shoppingcart.html><img src="https://i.pinimg.com/originals/01/d4/51/01d4510d8eb0199abf10f5102298d581.png" alt="shoppingcart" width=30></a>   
+    
+<header>
 
-            <input id="cartqty" value="0"/>
+    <h1><a href="homepage.html">Bun Bun Bake Shop</a></h1>
 
-        </nav>
+    <nav>
+        - 
+        <a href="products.html">Our products</a> 
+        -
+        <a> Locations</a>
+        -
+        <a>Catering</a>
+        -
+        <a href="aboutus.html">About us</a>
+        -
+        <a href=Shoppingcart.html><img src="https://i.pinimg.com/originals/01/d4/51/01d4510d8eb0199abf10f5102298d581.png" alt="shoppingcart" width=30></a>   
 
-    </header>
-
-       <div class="proddetailgrid">
-            <div id="detailsa">
-              <img src="https://images.unsplash.com/photo-1549438247-223f2db1dd29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" width=260 alt="blackberry pastry 1"/>
-            </div>
-
-            <div id="detailsb">
-                <img src="https://images.unsplash.com/photo-1561147637-fdd0db5d4de4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=660&q=80" height=390 alt="blackberry pastry 2"/>
-            </div>
+        <input id="cartqty" value="0"/>
 
 
-           <div id="choices">
-            <h3>Blackberry</h3>
+    </nav>
+
+</header>
+
+<div class="proddetailgrid">
+    <div id="detailsa">
+        <img src="https://images.unsplash.com/photo-1549438247-223f2db1dd29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" width=260 alt="blackberry pastry 1"/>
+        </div>
+
+    <div id="detailsb">
+        <img src="https://images.unsplash.com/photo-1561147637-fdd0db5d4de4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=660&q=80" height=390 alt="blackberry pastry 2"/>
+        </div>
+
+
+    <div id="choices">
+        <h3>Blackberry</h3>
             Quantity/price
-               <form>
-                   <label class="container">
-                   <input type="radio" name="choice" value="1 bun/$3" required id="opt1" onclick="qty1();"> 1 bun $3
-                       <span class="checkmark"></span>
-                   </label>
+        <form>
+            
+        <label class="container">
+        <input type="radio" name="choice" value="1 bun/$3" required id="opt1" onclick="qty1();"> 1 bun $3
+        <span class="checkmark"></span>
+            </label>
 
-                   <label class="container">
-                   <input type="radio" name="choice" value="3 buns/$7" required id="opt2" onclick="qty2();"> 3 buns/$7
-                       <span class="checkmark"></span>
-                       </label>
+        <label class="container">
+        <input type="radio" name="choice" value="3 buns/$7" required id="opt2" onclick="qty2();"> 3 buns/$7
+        <span class="checkmark"></span>
+            </label>
 
-                   <label class="container">
-                   <input type="radio" name="choice" value="6 buns/$15" required id="opt3" onclick="qty3();"> 6 buns/$15
-                       <span class="checkmark"></span>
-                       </label>
+        <label class="container">
+        <input type="radio" name="choice" value="6 buns/$15" required id="opt3" onclick="qty3();"> 6 buns/$15
+        <span class="checkmark"></span>
+            </label>
 
-                   <label class="container">
-                   <input type="radio" name="choice" value="12 buns/$30" required id="opt4" onclick="qty4();"> 12 buns/$30
-                       <span class="checkmark"></span>
-                       </label>
+        <label class="container">
+            <input type="radio" name="choice" value="12 buns/$30" required id="opt4" onclick="qty4();"> 12 buns/$30
+            <span class="checkmark"></span>
+                </label>
 
-               </form>
+        </form>
+        <br>  
+        Filling
+            <br>
+        <label class ="container">
+        <input type="radio" name="choice" value="None" required id="opt5" onclick="fill1();"> None
+        <span class="checkmark"></span>
+            </label>
 
-
-            <br>  
-            Filling
-               <br>
-                    <label class ="container">
-                    <input type="radio" name="choice" value="None" required id="opt5" onclick="fill1();"> None
-                        <span class="checkmark"></span>
-                       </label>
-
-               <label class ="container">    
-               <input type="radio" name="choice" value="Sugar-milk" required id="opt6" onclick="fill2();"> Sugar-milk
-                   <span class="checkmark"></span>
-                       </label>
+        <label class ="container">    
+        <input type="radio" name="choice" value="Sugar-milk" required id="opt6" onclick="fill2();"> Sugar-milk
+        <span class="checkmark"></span>
+            </label>
 
 
-               <label class ="container">      
-               <input type="radio" name="choice" value="Vanilla-milk" required id="opt7" onclick="fill3();"> Vanilla-milk
-                   <span class="checkmark"></span>
-                       </label>
+        <label class ="container">      
+        <input type="radio" name="choice" value="Vanilla-milk" required id="opt7" onclick="fill3();"> Vanilla-milk
+        <span class="checkmark"></span>
+            </label>
 
-               <label class ="container">     
-               <input type="radio" name="choice" value="Double-choco" required id="opt8" onclick="fill4();"> Choco
-                   <span class="checkmark"></span>
-                       </label>
+        <label class ="container">     
+        <input type="radio" name="choice" value="Double-choco" required id="opt8" onclick="fill4();"> Choco
+        <span class="checkmark"></span>
+            </label>
 
                <br>
                <br>
@@ -108,39 +108,35 @@
                     will increment the shopping cart unit #--> 
                <input type="submit" value="Add to Cart" onclick="incrementValue();">
            </div>
-
-
-
-
-
-
-           <div class ="otherprods">
+    
+    
+    <div class ="otherprods">
                Check out our other delicious products:
+        </div>
 
 
-               </div>
+    
 
-               <div class="otherprods2">
 
-    <div class="mySlides fade">
+    <div class="carousel-container">
+
+    <div class="carousel">
       <img src="https://i.pinimg.com/originals/a1/18/eb/a118eb42a47d6e7b4667f3520d906333.png" style="width:100%">
     </div>
 
-    <div class="mySlides fade">
+    <div class="carousel">
       <img src="https://i.pinimg.com/originals/e1/44/d0/e144d00b5dccf41a64b9638f297e182c.png" style="width:100%">
     </div>
 
-    <div class="mySlides fade">
-      <img src="https://i.pinimg.com/originals/15/4f/63/154f63c358e06063ef7ff768d5110070.png" alt="pumpkin spice bun" style="width:100%">
+    <div class="carousel">
+      <img src="https://i.pinimg.com/originals/15/4f/63/154f63c358e06063ef7ff768d5110070.png" style="width:100%">
     </div>
 
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <a class="prev" onclick="moveCarousel(-1)">&#10094;</a>
+    <a class="next" onclick="moveCarousel(1)">&#10095;</a>
 
     </div>
     <br>
-
-           </div>   
 
 
 
