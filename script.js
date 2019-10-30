@@ -6,6 +6,7 @@ var additional;
 //submit to cart
 function incrementValue() {
 <<<<<<< HEAD
+<<<<<<< HEAD
     
     if(typeof quantity !== null && typeof filling !== null){
 
@@ -64,13 +65,12 @@ function getCart(){
 
     }
     document.getElementById('cartqty').value = cart.length;
-=======
+
     "use strict";
     var value = parseInt(document.getElementById('cartqty').value, 10); 
     value++; //adding for each click
     document.getElementById('cartqty').value = value;
 }
->>>>>>> parent of be16b4b... HW 6B
 
 
 function qty1(){
