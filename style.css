@@ -332,7 +332,8 @@ form{
 
 #cartFull{
     color: black;
-    text-align: left;
+    align-content: center;
+    text-align: center;
     
 }
 

@@ -13,6 +13,7 @@ function bunItem(filling, quantity){
 }
 
 //submit to cart
+
 function incrementValue() {
     
     if(typeof quantity !== null && typeof filling !== null){
@@ -43,15 +44,12 @@ function getCart(){
         var item = document.getElementById("cartFull");
         item.append("Blackberry");
         
-        
-        
         var fillingHTML = document.createElement("p");
          var fillingText = document.createTextNode=cart[i][0];
         
         fillingHTML.append(fillingText);
         var item = document.createElement("div");
         item.append(fillingHTML);
-        
         
         
         var quantityHTML = document.createElement("p");
