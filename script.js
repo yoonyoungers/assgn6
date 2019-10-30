@@ -1,19 +1,11 @@
 var quantity;
 var filling;
 var additional;
-var value;
 
-var cartArray = [];
-
-
-//create object
-function bunItem(filling, quantity){
-    this.filling = filling;
-    this.quantity = quantity;
-}
 
 //submit to cart
 function incrementValue() {
+<<<<<<< HEAD
     
     if(typeof quantity !== null && typeof filling !== null){
 
@@ -72,82 +64,59 @@ function getCart(){
 
     }
     document.getElementById('cartqty').value = cart.length;
-
-function removeFromCart(itemToRemove){
-var cart = JSON.parse(localStorage.getItem("cartArray"));
-    var removeIndex = itemToRemove.getAttribute("value2");
-    cart.splice(removeIndex , 1);
-    localStorage.setItem("cartArray", JSON.stringify(cart));
-    getCart();
+=======
+    "use strict";
+    var value = parseInt(document.getElementById('cartqty').value, 10); 
+    value++; //adding for each click
+    document.getElementById('cartqty').value = value;
 }
+>>>>>>> parent of be16b4b... HW 6B
+
 
 function qty1(){
-    bunItem.quantity = document.getElementById("opt1").value;
+    quantity = document.getElementById("opt1").value;
 
 }
 
 function qty2(){
-    bunItem.quantity = document.getElementById("opt2").value;
+    quantity = document.getElementById("opt2").value;
 }
 
 
 function qty3(){
-    bunItem.quantity = document.getElementById("opt3").value;
+    quantity = document.getElementById("opt3").value;
 }
 
+
 function qty4(){
-    bunItem.quantity = document.getElementById("opt4").value;
+    quantity = document.getElementById("opt4").value;
 }
 
 function fill1(){
-    bunItem.filling = document.getElementById("opt5").value; 
+    filling = document.getElementById("opt5").value; 
 }
 
 function fill2(){
-    bunItem.filling = document.getElementById("opt6").value;   
+    filling = document.getElementById("opt6").value;   
 }
 
 function fill3(){
-    bunItem.filling = document.getElementById("opt7").value;   
+    filling = document.getElementById("opt7").value;   
 }
 
 function fill4(){
-    bunItem.filling = document.getElementById("opt8").value; 
+    filling = document.getElementById("opt8").value; 
 }
 
 function fill5(){
-    bunItem.filling = document.getElementById("opt9").value; 
+    filling = document.getElementById("opt9").value; 
 }
 
-
-
-
-
-
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+function validate(){
+    if(quantity != null & filling != null){
+        console.log(quantity +" "+ filling);
+    } 
+    else{
+        console.log("don't add");
+    }
 }
